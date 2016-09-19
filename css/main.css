@@ -19,8 +19,9 @@ textarea {
 }
 
 body {
-    font-size: 1em;
+    font-size: 2rem;
     line-height: 1.4;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -217,7 +218,9 @@ textarea[contenteditable] {
 
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
-
+  body {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
