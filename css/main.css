@@ -221,6 +221,10 @@ textarea[contenteditable] {
   body {
     font-size: 1.5rem;
   }
+
+  .navbar-nav {
+    display: inline-table;
+  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
