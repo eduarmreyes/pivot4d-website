@@ -77,6 +77,7 @@ textarea {
   background: url("../img/PIVOT4D_LOGO.png") no-repeat;
   background-size: contain;
   display: inline-block;
+  margin-top: 2rem;
   height: 50px;
   width: 150px;
 }
