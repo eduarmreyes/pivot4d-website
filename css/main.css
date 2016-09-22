@@ -67,8 +67,8 @@ textarea {
    ========================================================================== */
 
 .main-header {
-  background: #75898E;
-  background: rgba(117,137,142,0.8);
+  background: #0B2E40;
+  background: rgba(11, 46, 64, 0.8);
   padding: 0.5rem;
   text-align: center;
 }
@@ -232,9 +232,10 @@ textarea[contenteditable] {
     display: block;
     height: auto;
     left: 50%;
-    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
     position: fixed;
-    top: 27%;
+    top: 340px;
     transform: translate(-50%, -50%);
     width: auto;
     z-index: -100;
