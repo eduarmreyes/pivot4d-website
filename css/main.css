@@ -63,23 +63,41 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+  Author's custom styles
+========================================================================== */
+
+.copyright {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.fullscreen-bg__video {
+  display: none;
+}
+
+.galery {
+  color: #000;
+  padding: 5rem 0;
+}
+
+.galery h1 {
+  text-align: center;
+}
+
+.logo {
+ background: url("../img/PIVOT4D_LOGO.png") no-repeat;
+ background-size: contain;
+ display: inline-block;
+ margin-top: 2rem;
+ height: 50px;
+ width: 150px;
+}
 
 .main-header {
   background: #0B2E40;
   background: rgba(11, 46, 64, 0.8);
   padding: 0.5rem;
   text-align: center;
-}
-
-.logo {
-  background: url("../img/PIVOT4D_LOGO.png") no-repeat;
-  background-size: contain;
-  display: inline-block;
-  margin-top: 2rem;
-  height: 50px;
-  width: 150px;
 }
 
 .nav.navbar-nav li a {
@@ -89,10 +107,6 @@ textarea {
 .nav.navbar-nav li a:hover,
 .nav.navbar-nav li a:focus {
   background-color: #f3450d;
-}
-
-.fullscreen-bg__video {
-  display: none;
 }
 
 
@@ -105,6 +119,11 @@ textarea {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+/* Text Center */
+.text-center {
+  text-align: center;
+}
 
 /* Prevent callout */
 
@@ -223,8 +242,20 @@ textarea[contenteditable] {
     font-size: 1.5rem;
   }
 
-  .navbar-nav {
-    display: inline-table;
+  .galery {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .footer {
+    background-color: #f5f5f5;
+    bottom: 0;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    width: 100%;
   }
 
   .fullscreen-bg {
@@ -246,6 +277,11 @@ textarea[contenteditable] {
     top: 0;
     width: 100%;
   }
+
+  .navbar-nav {
+    display: inline-table;
+  }
+
 }
 
 @media (min-aspect-ratio: 16/9) {
