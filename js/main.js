@@ -12,7 +12,7 @@
 				$(".galery").html(data);
 			},
 			type: "get",
-			url: "_" + sOption + ".html"
+			url: "./_" + sOption + ".html"
 		});
 	}
 })();
