@@ -111,6 +111,33 @@ textarea {
   text-align: center;
 }
 
+/* ng-view slide animation */
+.view-animate.ng-enter, .view-animate.ng-leave {
+  transition: slide 0.5s forwards;
+  transition-delay: 1s;
+
+  display:block;
+  width:100%;
+}
+
+.view-animate.ng-enter {
+  left:100%;
+}
+.view-animate.ng-enter.ng-enter-active {
+  left:0;
+}
+.view-animate.ng-leave.ng-leave-active {
+  left:-100%;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
 .logo {
  background: url("../img/PIVOT4D_LOGO.png") no-repeat;
  background-size: contain;
@@ -136,6 +163,48 @@ textarea {
   background-color: #f3450d;
 }
 
+/* ng-view show content with slide transition */
+
+.ng-enter           { animation: scaleUp 0.5s both ease-in; z-index: 8888; }
+.ng-leave           { animation: slideOutLeft 0.5s both ease-in; z-index: 9999; }
+
+.ng-enter       { z-index: 8888; }
+.ng-leave       { z-index: 9999; }
+@keyframes rotateFall {
+    0%      { transform: rotateZ(0deg); }
+    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { transform: rotateZ(17deg); }
+    60%     { transform: rotateZ(16deg); }
+    100%    { transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+/* rotate out newspaper */
+@keyframes rotateOutNewspaper {
+    to      { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+
+/* entering animations --------------------------------------- */
+/* scale up */
+@keyframes scaleUp {
+    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideInUp {
+    from    { transform:translateY(100%); }
+    to      { transform: translateY(0); }
+}
 
 
 
@@ -170,6 +239,10 @@ html {
 
 textarea[contenteditable] {
     -webkit-appearance: none;
+}
+
+.font-size-10rem {
+  font-size: 10rem;
 }
 
 /* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
