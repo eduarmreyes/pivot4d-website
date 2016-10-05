@@ -112,7 +112,39 @@ textarea {
 }
 
 /* ng-view slide animation */
-.view-animate.ng-enter, .view-animate.ng-leave {
+.view-animate.ng-enter {
+  animation-name: slidein;
+  animation-duration: 1s;
+
+  display: block;
+  width: 100%;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.view-animate.ng-leave {
   transition: slide 0.5s forwards;
   transition-delay: 1s;
 
