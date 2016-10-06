@@ -92,7 +92,7 @@ textarea {
   margin: 0;
   padding-left: 15%;
   padding-right: 15%;
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 
@@ -105,7 +105,7 @@ textarea {
   bottom: 0;
   height: 100px;
   margin: 0;
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 
@@ -123,7 +123,6 @@ textarea {
 
 .gallery {
   color: #000;
-  margin-bottom: 150px;
   padding: 2rem 0;
 }
 
@@ -154,6 +153,10 @@ textarea {
 .nav.navbar-nav li a:hover,
 .nav.navbar-nav li a:focus {
   background-color: #f3450d;
+}
+
+.view-animate {
+  margin-bottom: 150px;
 }
 
 /* Sticky footer styles
