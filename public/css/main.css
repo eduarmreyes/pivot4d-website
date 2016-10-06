@@ -295,6 +295,11 @@ textarea[contenteditable] {
     margin-bottom: 100px;
   }
 
+  html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .btn_content {
     padding-left: 15%;
     padding-right: 15%;
