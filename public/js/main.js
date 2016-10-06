@@ -23,6 +23,12 @@
 					return "partials/_at-your-service.html";
 				}
 			})
+			.when("/portfolio", {
+				controller:		"PortfolioCtrl",
+				templateUrl: function() {
+					return "partials/_portfolio.html";
+				}
+			})
 			.when("/support", {
 				controller:		"SupportCtrl",
 				templateUrl: function() {
@@ -46,6 +52,11 @@
 	GalleryApp.controller('AtYourServiceCtrl', [function(){
 		$(".fullscreen-bg").fadeOut();
 		$("body").css("background", "url('img/at_your_service_backgroup.png') 0% 0% / cover no-repeat");
+	}]);
+
+	GalleryApp.controller('PortfolioCtrl', [function(){
+		$(".fullscreen-bg").fadeOut();
+		$("body").css("background", "url('img/portfolio_on_the_go_backgroup.png') 0% 0% / cover no-repeat");
 	}]);
 
 	GalleryApp.controller('SupportCtrl', [function(){

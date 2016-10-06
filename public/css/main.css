@@ -281,6 +281,39 @@ textarea[contenteditable] {
     clear: both;
 }
 
+/**
+  * display handy classes
+**/
+
+.display-table {
+  display: table;
+}
+
+.display-table-cell {
+  display: table-cell;
+}
+
+/**
+  * set float to none
+**/
+
+.float-none {
+  float: none;
+}
+
+/**
+  * vertical-align-middle
+**/
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    Theses examples override the primary ('mobile first') styles.
