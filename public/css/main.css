@@ -81,8 +81,19 @@ textarea {
 .btn_content a {
   color: #E5E5E5;
 }
+
 .btn_content a:hover {
   color: #DB400E;
+}
+
+.btn_footer {
+  bottom: 0;
+  height: 150px;
+  margin: 0;
+  padding-left: 15%;
+  padding-right: 15%;
+  position: absolute;
+  width: 100%;
 }
 
 .copyright {
@@ -91,6 +102,14 @@ textarea {
 }
 
 .footer {
+  bottom: 0;
+  height: 100px;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.footer .container {
   background-color: #f5f5f5;
 }
 
@@ -104,52 +123,12 @@ textarea {
 
 .gallery {
   color: #000;
+  margin-bottom: 150px;
   padding: 2rem 0;
 }
 
 .gallery h1 {
   text-align: center;
-}
-
-/* ng-view slide animation */
-.view-animate.ng-enter {
-  animation-name: slidein;
-  animation-duration: 1s;
-
-  display: block;
-  width: 100%;
-}
-
-@-webkit-keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-.view-animate.ng-leave {
-  transition: slide 0.5s forwards;
-  transition-delay: 1s;
-
-  display:block;
-  width:100%;
 }
 
 .logo {
@@ -176,52 +155,6 @@ textarea {
 .nav.navbar-nav li a:focus {
   background-color: #f3450d;
 }
-
-/* ng-view show content with slide transition */
-
-.ng-enter           { animation: scaleUp 0.5s both ease-in; z-index: 8888; }
-.ng-leave           { animation: slideOutLeft 0.5s both ease-in; z-index: 9999; }
-
-.ng-enter       { z-index: 8888; }
-.ng-leave       { z-index: 9999; }
-@keyframes rotateFall {
-    0%      { transform: rotateZ(0deg); }
-    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
-    40%     { transform: rotateZ(17deg); }
-    60%     { transform: rotateZ(16deg); }
-    100%    { transform: translateY(100%) rotateZ(17deg); }
-}
-
-/* slide in from the bottom */
-@keyframes slideOutLeft {
-    to      { transform: translateX(-100%); }
-}
-
-/* rotate out newspaper */
-@keyframes rotateOutNewspaper {
-    to      { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
-}
-
-/* entering animations --------------------------------------- */
-/* scale up */
-@keyframes scaleUp {
-    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
-}
-
-/* slide in from the right */
-@keyframes slideInRight {
-    from    { transform:translateX(100%); }
-    to      { transform: translateX(0); }
-}
-
-/* slide in from the bottom */
-@keyframes slideInUp {
-    from    { transform:translateY(100%); }
-    to      { transform: translateY(0); }
-}
-
-
-
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -370,16 +303,11 @@ textarea[contenteditable] {
   .gallery {
     color: #fff;
     font-size: 2rem;
-    padding-left: 15%;
-    padding-right: 15%;
+    position: relative;
   }
 
   .footer {
-    bottom: 0;
-    height: 100px;
-    margin: 0;
-    position: absolute;
-    width: 100%;
+    background-color: #f5f5f5;
   }
 
   .fullscreen-bg {
@@ -405,6 +333,56 @@ textarea[contenteditable] {
   .navbar-nav {
     display: inline-table;
   }
+
+  .view-animate {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  /* ng-view slide animation */
+  .view-animate {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .view-animate.ng-enter {
+    -webkit-animation:slideInRight 0.5s both ease-in;
+    -moz-animation:slideInRight 0.5s both ease-in;
+    animation:slideInRight 0.5s both ease-in;
+  }
+
+  .view-animate.ng-leave {
+    -webkit-animation:slideOutLeft 0.5s both ease-in;
+    -moz-animation:slideOutLeft 0.5s both ease-in;
+    animation:slideOutLeft 0.5s both ease-in;
+  }
+
+  /* slide in from the right */
+  @keyframes slideInRight {
+    from  { transform:translateX(100%); }
+    to    { transform: translateX(0); }
+  }
+  @-moz-keyframes slideInRight {
+    from  { -moz-transform:translateX(100%); }
+    to    { -moz-transform: translateX(0); }
+  }
+  @-webkit-keyframes slideInRight {
+    from  { -webkit-transform:translateX(100%); }
+    to    { -webkit-transform: translateX(0); }
+  }
+
+  /* slide in from the bottom */
+  @keyframes slideOutLeft {
+    to    { transform: translateX(-100%); }
+  }
+  @-moz-keyframes slideOutLeft {
+    to    { -moz-transform: translateX(-100%); }
+  }
+  @-webkit-keyframes slideOutLeft {
+    to    { -webkit-transform: translateX(-100%); }
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {

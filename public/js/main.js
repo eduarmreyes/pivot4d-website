@@ -7,19 +7,27 @@
 		$routeProvider
 			.when("/", {
 				controller:		"HomeCtrl",
-				templateUrl:	"partials/_home.html"
+				templateUrl:	function(aData) {
+					return "partials/_home.html";
+				}
 			})
 			.when("/our-relationships", {
 				controller:		"OurRelationshipsCtrl",
-				templateUrl: "partials/_our-relationships.html"
+				templateUrl: function() {
+					return "partials/_our-relationships.html";
+				}
 			})
 			.when("/at-your-service", {
 				controller:		"AtYourServiceCtrl",
-				templateUrl: "partials/_at-your-service.html"
+				templateUrl: function() {
+					return "partials/_at-your-service.html";
+				}
 			})
 			.when("/support", {
 				controller:		"SupportCtrl",
-				templateUrl: "partials/_support.html"
+				templateUrl: function() {
+					return "partials/_support.html";
+				}
 			})
 			.otherwise({
 				redirectTo: "/"
