@@ -249,6 +249,14 @@ textarea[contenteditable] {
     -webkit-appearance: none;
 }
 
+.padding-bottom-10 {
+  padding-bottom: 10%;
+}
+
+.font-size-1_7rem {
+  font-size: 1.7rem;
+}
+
 .font-size-10rem {
   font-size: 10rem;
 }
@@ -372,6 +380,10 @@ textarea[contenteditable] {
 
 .width-100 {
   width: 100%;
+}
+
+.width-150 {
+  width: 150%;
 }
 
 
