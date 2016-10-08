@@ -1,5 +1,5 @@
 /* Get Fonts */
-@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
 
 /*
  * HTML5 Boilerplate
@@ -22,9 +22,9 @@ textarea {
 }
 
 body {
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 1.4;
-    font-family: "Open Sans", "Open Sans Condensed", "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -80,8 +80,8 @@ textarea {
 
 .btn_content a {
   display: inline-block;
-  height: 45px;
-  width: 45px;
+  height: 60px;
+  width: 60px;
 }
 
 .btn_footer {
@@ -156,7 +156,7 @@ textarea {
 .be_the_director_btn {
   background-image: url("../img/be_the_director.png");
   background-repeat: no-repeat;
-  background-size: 45px;
+  background-size: 60px;
 }
 
 .be_the_director_btn:hover {
@@ -166,7 +166,7 @@ textarea {
 .content_management_btn {
   background-image: url("../img/content_management.png");
   background-repeat: no-repeat;
-  background-size: 45px;
+  background-size: 60px;
 }
 
 .content_management_btn:hover {
@@ -176,7 +176,7 @@ textarea {
 .just_share_btn {
   background-image: url("../img/just_share.png");
   background-repeat: no-repeat;
-  background-size: 45px;
+  background-size: 60px;
 }
 
 .just_share_btn:hover {
@@ -186,7 +186,7 @@ textarea {
 .multiple_users_btn {
   background-image: url("../img/n_users.png");
   background-repeat: no-repeat;
-  background-size: 45px;
+  background-size: 60px;
 }
 
 .multiple_users_btn:hover {
@@ -196,7 +196,7 @@ textarea {
 .portfolio_btn {
   background-image: url("../img/portfolio.png");
   background-repeat: no-repeat;
-  background-size: 45px;
+  background-size: 60px;
 }
 
 .portfolio_btn:hover {
@@ -206,7 +206,7 @@ textarea {
 .support_btn {
   background-image: url("../img/support_btn.png");
   background-repeat: no-repeat;
-  background-size: 45px;
+  background-size: 60px;
 }
 
 .support_btn:hover {
@@ -253,8 +253,8 @@ textarea[contenteditable] {
   padding-bottom: 10%;
 }
 
-.font-size-1_7rem {
-  font-size: 1.7rem;
+.font-size-1_4rem {
+  font-size: 1.4rem;
 }
 
 .font-size-10rem {
@@ -397,7 +397,7 @@ textarea[contenteditable] {
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
   body {
-    font-size: 1.5rem;
+    font-size: 1rem;
     /* Margin bottom by footer height */
     margin-bottom: 100px;
   }
@@ -414,7 +414,7 @@ textarea[contenteditable] {
 
   .gallery {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.3rem;
     position: relative;
   }
   ng-view.view-animate.color-black {
