@@ -80,8 +80,8 @@ textarea {
 
 .btn_content a {
   display: inline-block;
-  height: 60px;
-  width: 60px;
+  height: 45px;
+  width: 45px;
 }
 
 .btn_footer {
@@ -156,7 +156,7 @@ textarea {
 .be_the_director_btn {
   background-image: url("../img/be_the_director.png");
   background-repeat: no-repeat;
-  background-size: 60px;
+  background-size: 45px;
 }
 
 .be_the_director_btn:hover {
@@ -166,7 +166,7 @@ textarea {
 .content_management_btn {
   background-image: url("../img/content_management.png");
   background-repeat: no-repeat;
-  background-size: 60px;
+  background-size: 45px;
 }
 
 .content_management_btn:hover {
@@ -176,7 +176,7 @@ textarea {
 .just_share_btn {
   background-image: url("../img/just_share.png");
   background-repeat: no-repeat;
-  background-size: 60px;
+  background-size: 45px;
 }
 
 .just_share_btn:hover {
@@ -186,7 +186,7 @@ textarea {
 .multiple_users_btn {
   background-image: url("../img/n_users.png");
   background-repeat: no-repeat;
-  background-size: 60px;
+  background-size: 45px;
 }
 
 .multiple_users_btn:hover {
@@ -196,7 +196,7 @@ textarea {
 .portfolio_btn {
   background-image: url("../img/portfolio.png");
   background-repeat: no-repeat;
-  background-size: 60px;
+  background-size: 45px;
 }
 
 .portfolio_btn:hover {
@@ -206,7 +206,7 @@ textarea {
 .support_btn {
   background-image: url("../img/support_btn.png");
   background-repeat: no-repeat;
-  background-size: 60px;
+  background-size: 45px;
 }
 
 .support_btn:hover {
@@ -405,6 +405,12 @@ textarea[contenteditable] {
   html {
     max-width: 100%;
     overflow-x: hidden;
+  }
+
+  .btn_content a {
+    background-size: 60px;
+    height: 60px;
+    width: 60px;
   }
 
   .btn_content {
