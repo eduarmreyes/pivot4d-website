@@ -22,7 +22,7 @@ textarea {
 }
 
 body {
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 1.4;
     font-family: "Open Sans", "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
@@ -253,8 +253,8 @@ textarea[contenteditable] {
   padding-bottom: 10%;
 }
 
-.font-size-1_4rem {
-  font-size: 1.4rem;
+.font-size-1_7rem {
+  font-size: 1.7rem;
 }
 
 .font-size-10rem {
@@ -397,7 +397,7 @@ textarea[contenteditable] {
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
   body {
-    font-size: 1rem;
+    font-size: 1.5rem;
     /* Margin bottom by footer height */
     margin-bottom: 100px;
   }
@@ -420,7 +420,7 @@ textarea[contenteditable] {
 
   .gallery {
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     position: relative;
   }
   ng-view.view-animate.color-black {
