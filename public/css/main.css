@@ -428,12 +428,8 @@ textarea[contenteditable] {
     font-size: 3rem;
   }
 
-  ng-view.view-animate {
-    font-weight: bold;
-  }
-
   ng-view.view-animate.color-black {
-    color: #27424F;
+    color: #000;
   }
 
   .footer {
