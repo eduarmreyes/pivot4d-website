@@ -523,6 +523,13 @@ textarea[contenteditable] {
 
 @media (max-aspect-ratio: 16/9) {
   .fullscreen-bg__video {
+    left: -60%;
+    width: 250%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) and (min-width: 1500px) {
+  .fullscreen-bg__video {
     left: -10%;
     width: 110%;
   }
