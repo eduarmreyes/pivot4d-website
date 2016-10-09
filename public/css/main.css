@@ -420,9 +420,14 @@ textarea[contenteditable] {
 
   .gallery {
     color: #fff;
-    font-size: 1.7rem;
+    font-size: 2.55rem;
     position: relative;
   }
+
+  .gallery h1 {
+    font-size: 4rem;
+  }
+
   ng-view.view-animate.color-black {
     color: #27424F;
   }
