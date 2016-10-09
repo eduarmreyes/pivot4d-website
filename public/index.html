@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid-system.min.css">
     <link rel="stylesheet" href="css/bootstrap-navbar.min.css">
+    <link rel="stylesheet" href="css/bootstrap-forms.min.css">
     <link rel="stylesheet" href="css/bootstrap.offcanvas.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.7.1.min.js"></script>
@@ -65,11 +66,11 @@
         </button>
         <nav class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#/">Home</a></li>
-            <li><a href="#/our-relationships" data-content="our-relationships">Our Relationships</a></li>
-            <li><a href="#/at-your-service" data-content="at-your-service">At your service</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="http://www.pivot4d.com/log_in.php" target="_blank">Login</a></li>
+            <li class="active"><a class="offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" href="#/">Home</a></li>
+            <li><a class="offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" href="#/our-relationships" data-content="our-relationships">Our Relationships</a></li>
+            <li><a class="offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" href="#/at-your-service" data-content="at-your-service">At your service</a></li>
+            <li><a class="offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" href="#/contact-us">Contact Us</a></li>
+            <li><a class="offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" href="http://www.pivot4d.com/log_in.php" target="_blank">Login</a></li>
           </ul>
         </nav>
       </header>
@@ -83,24 +84,12 @@
     </div>
     <section class="row btn_footer">
       <div class="btn_content">
-        <div class="col-xs-2">
-          <a class="portfolio_btn" href="#/portfolio" title="Portfolio on the Go!"></a>
-        </div>
-        <div class="col-xs-2">
-          <a class="support_btn" href="#/support" title=""></a>
-        </div>
-        <div class="col-xs-2">
-          <a class="content_management_btn" href="#/content-management" title=""></a>
-        </div>
-        <div class="col-xs-2">
-          <a class="be_the_director_btn" href="#/be-the-director" title=""></a>
-        </div>
-        <div class="col-xs-2">
-          <a class="just_share_btn" href="#/just-share" title=""></a>
-        </div>
-        <div class="col-xs-2">
-          <a class="multiple_users_btn" href="#/multiple-users" title=""></a>
-        </div>
+        <a class="portfolio_btn" href="#/portfolio" title="Portfolio on the Go!"></a>
+        <a class="support_btn" href="#/support" title=""></a>
+        <a class="content_management_btn" href="#/content-management" title=""></a>
+        <a class="be_the_director_btn" href="#/be-the-director" title=""></a>
+        <a class="just_share_btn" href="#/just-share" title=""></a>
+        <a class="multiple_users_btn" href="#/multiple-users" title=""></a>
       </div>
     </section>
     <footer class="footer">
@@ -110,7 +99,7 @@
           <p>All Rights Reserved</p>
         </div>
         <div class="col-sm-4 text-center">
-          <p><img src="img/3delcid_logo.jpg" alt="3delcid Logo"></p>
+          <p><a href="http://www.3delcid.net" title="3delcid.net"><img src="img/3delcid_logo.jpg" alt="3delcid Logo"></a></p>
           A 3delcid.com Development
         </div>
         <div class="col-sm-4 text-center">

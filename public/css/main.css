@@ -72,6 +72,7 @@ textarea {
 
 .btn_content {
   margin-bottom: 5%;
+  text-align: center;
 }
 
 .btn_content .col-xs-2 .fa {
@@ -80,8 +81,14 @@ textarea {
 
 .btn_content a {
   display: inline-block;
-  height: 45px;
-  width: 45px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin: 0px 2px;
+  padding: 0px 0px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: solid 2px transparent;
 }
 
 .btn_footer {
@@ -352,18 +359,6 @@ textarea[contenteditable] {
 
 
 /**
-  * display handy classes
-**/
-
-.display-table {
-  display: table;
-}
-
-.display-table-cell {
-  display: table-cell;
-}
-
-/**
   * set float to none
 **/
 
@@ -408,7 +403,7 @@ textarea[contenteditable] {
   }
 
   .btn_content a {
-    background-size: 60px;
+    background-size: 58px;
     height: 60px;
     width: 60px;
   }
@@ -416,6 +411,18 @@ textarea[contenteditable] {
   .btn_content {
     padding-left: 15%;
     padding-right: 15%;
+  }
+
+  /**
+    * display handy classes
+  **/
+
+  .display-table {
+    display: table;
+  }
+
+  .display-table-cell {
+    display: table-cell;
   }
 
   .gallery {
@@ -508,6 +515,10 @@ textarea[contenteditable] {
   }
   @-webkit-keyframes slideOutLeft {
     to    { -webkit-transform: translateX(-100%); }
+  }
+
+  .width-200 {
+    width: 200%;
   }
 
 }

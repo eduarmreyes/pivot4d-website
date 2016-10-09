@@ -23,6 +23,12 @@
 					return "partials/_be-the-director.html";
 				}
 			})
+			.when("/contact-us", {
+				controller:		"ContactUsCtrl",
+				templateUrl: function() {
+					return "partials/_contact-us.html";
+				}
+			})
 			.when("/content-management", {
 				controller:		"ContentManagementCtrl",
 				templateUrl: function() {
@@ -89,6 +95,10 @@
 		} else {
 			$("body").css("background", "");
 		}
+	}]);
+
+	GalleryApp.controller('ContactUsCtrl', ["$scope", function($scope){
+		$(".fullscreen-bg").fadeIn();
 	}]);
 
 	GalleryApp.controller('ContentManagementCtrl', ["$scope", function($scope){
