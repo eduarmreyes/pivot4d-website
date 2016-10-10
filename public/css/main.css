@@ -80,23 +80,23 @@ textarea {
 }
 
 .btn_content a {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  margin: 0 12px;
-  padding: 0 0;
-  text-decoration: none;
-  border-radius: 5px;
   border: solid 2px transparent;
+  border-radius: 5px;
+  display: inline-block;
+  height: 45px;
+  margin: 0 2px;
+  padding: 0 0;
+  text-align: center;
+  text-decoration: none;
+  width: 45px;
 }
 
 .btn_footer {
   bottom: 0;
   height: 150px;
   margin: 0;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
   position: fixed;
   width: 100%;
 }
@@ -378,7 +378,7 @@ textarea[contenteditable] {
 }
 
 .width-150 {
-  width: 150%;
+  width: 100%;
 }
 
 
@@ -405,12 +405,18 @@ textarea[contenteditable] {
   .btn_content a {
     background-size: 58px;
     height: 60px;
+    margin: 0 12px;
     width: 60px;
   }
 
   .btn_content {
     padding-left: 15%;
     padding-right: 15%;
+  }
+
+  .btn_footer {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   /**
@@ -515,6 +521,10 @@ textarea[contenteditable] {
   }
   @-webkit-keyframes slideOutLeft {
     to    { -webkit-transform: translateX(-100%); }
+  }
+
+  .width-150 {
+    width: 150%;
   }
 
   .width-200 {
