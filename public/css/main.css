@@ -84,8 +84,8 @@ textarea {
   width: 60px;
   height: 60px;
   text-align: center;
-  margin: 0px 2px;
-  padding: 0px 0px;
+  margin: 0 12px;
+  padding: 0 0;
   text-decoration: none;
   border-radius: 5px;
   border: solid 2px transparent;
