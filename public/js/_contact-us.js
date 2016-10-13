@@ -120,8 +120,11 @@
 		$.ajax({
 			type: "GET",
 			url: importUrlContact,
-			success: function(datos){
-				$(".message").html(datos);
+			success: function(datos, xhr){
+				var ct =xhr.getResponseHeader("content-type") || "";
+				if (ct.indexOf("html") > -1) {
+					$(".message").html("Your message has been sent.");
+				}
 			}
 		});
 		fnClearForm();
