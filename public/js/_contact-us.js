@@ -120,14 +120,12 @@
 
 	function _f_sendMessageToContact(importUrlContact){
 		$.ajax({
+			success: function() {
+				// TODO: Should validate if the success was real
+				$(".message").html("Your message has been sent.");
+			},
 			type: "GET",
-			url: importUrlContact,
-			success: function(datos, xhr){
-				var ct =xhr.getResponseHeader("content-type") || "";
-				if (ct.indexOf("html") > -1) {
-					$(".message").html("Your message has been sent.");
-				}
-			}
+			url: importUrlContact
 		});
 		fnClearForm();
 	}
