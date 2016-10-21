@@ -48,10 +48,7 @@
   </head>
   <body>
     <section class="fullscreen-bg">
-      <video autoplay loop poster="img/poster-pivot4d.png" class="fullscreen-bg__video">
-        <source src="video/pivot4d.mp4" type="video/mp4">
-        <source src="video/pivot4d.webm" type="video/webm">
-        </video>
+      <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/a27KgnTY_sQ?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=a27KgnTY_sQ" frameborder="0" allowfullscreen class="fullscreen-bg__video"></iframe>
     </section>
     <div class="wrapper">
       <header class="main-header">
@@ -126,7 +123,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js" type="text/javascript"></script>
+    <script src="js/vendor/mediaelement-and-player.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      $(document).on("ready", function() {
+        var player = new MediaElementPlayer("#fullscreen-video-youtube");
+      });
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

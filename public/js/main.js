@@ -80,7 +80,7 @@
 		if (window.matchMedia("(min-width: 768px)").matches) {
 		}
 		if (window.matchMedia("(min-width: 768px)").matches) {
-			$("body").css("background", "url('img/at_your_service_backgroup.png') no-repeat center center fixed");
+			$("body").css("background", "url('img/at_your_service_backgroup.jpg') no-repeat center center fixed");
 			$("body").css("background-size", "cover");
 		} else {
 			$("body").css("background", "");
@@ -90,7 +90,7 @@
 	GalleryApp.controller('BeTheDirectorCtrl', ["$scope", function($scope){
 		$(".fullscreen-bg").fadeOut();
 		if (window.matchMedia("(min-width: 768px)").matches) {
-			$("body").css("background", "url('img/be_the_director_backgroup.png') no-repeat center center fixed");
+			$("body").css("background", "url('img/be_the_director_backgroup.jpg') no-repeat center center fixed");
 			$("body").css("background-size", "cover");
 		} else {
 			$("body").css("background", "");
@@ -104,7 +104,7 @@
 	GalleryApp.controller('ContentManagementCtrl', ["$scope", function($scope){
 		$(".fullscreen-bg").fadeOut();
 		if (window.matchMedia("(min-width: 768px)").matches) {
-			$("body").css("background", "url('img/content_management_backgroup.png') no-repeat center center fixed");
+			$("body").css("background", "url('img/content_management_backgroup.jpg') no-repeat center center fixed");
 			$("body").css("background-size", "cover");
 		} else {
 			$("body").css("background", "");
@@ -115,7 +115,7 @@
 		$scope.color_class = "color-black";
 		$(".fullscreen-bg").fadeOut("");
 		if (window.matchMedia("(min-width: 768px)").matches) {
-			$("body").css("background", "url('img/just_share_backgroup.png') no-repeat center center fixed");
+			$("body").css("background", "url('img/just_share_backgroup.jpg') no-repeat center center fixed");
 			$("body").css("background-size", "cover");
 		} else {
 			$("body").css("background", "");
@@ -126,7 +126,7 @@
 		$scope.color_class = "color-black";
 		$(".fullscreen-bg").fadeOut("");
 		if (window.matchMedia("(min-width: 768px)").matches) {
-			$("body").css("background", "url('img/multiple_users_backgroup.png') no-repeat center center fixed");
+			$("body").css("background", "url('img/multiple_users_backgroup.jpg') no-repeat center center fixed");
 			$("body").css("background-size", "cover");
 		} else {
 			$("body").css("background", "");
@@ -137,7 +137,7 @@
 		$scope.color_class = "color-black";
 		$(".fullscreen-bg").fadeOut("");
 		if (window.matchMedia("(min-width: 768px)").matches) {
-			$("body").css("background", "url('img/our_relationships_backgroup.png') no-repeat center center fixed");
+			$("body").css("background", "url('img/our_relationships_backgroup.jpg') no-repeat center center fixed");
 			$("body").css("background-size", "cover");
 		} else {
 			$("body").css("background", "");
@@ -148,7 +148,7 @@
 		$scope.color_class = "color-black";
 		$(".fullscreen-bg").fadeOut();
 		if (window.matchMedia("(min-width: 768px)").matches) {
-			$("body").css("background", "url('img/portfolio_on_the_go_backgroup.png') no-repeat center center fixed");
+			$("body").css("background", "url('img/portfolio_on_the_go_backgroup.jpg') no-repeat center center fixed");
 			$("body").css("background-size", "cover");
 		} else {
 			$("body").css("background", "");
@@ -158,7 +158,7 @@
 	GalleryApp.controller('SupportCtrl', ["$scope", function($scope){
 		$(".fullscreen-bg").fadeOut();
 		if (window.matchMedia("(min-width: 768px)").matches) {
-			$("body").css("background", "url('img/support_backgroup.png') no-repeat center center fixed");
+			$("body").css("background", "url('img/support_backgroup.jpg') no-repeat center center fixed");
 			$("body").css("background-size", "cover");
 		} else {
 			$("body").css("background", "");
